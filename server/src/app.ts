@@ -8,7 +8,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://library-management-gray-one.vercel.app",
+      "https://library-managements-pks9.vercel.app",
     ], // allow all origins
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
