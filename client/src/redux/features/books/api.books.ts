@@ -2,7 +2,9 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import type { GetBookByIdResponse, GetBooksResponse } from "../../../types";
 export const booksApi = createApi({
   reducerPath: "booksApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5000/api/" }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://library-managements-inky.vercel.app/api/",
+  }),
   endpoints: (builder) => ({
     getBooks: builder.query<GetBooksResponse, void>({
       query: () => "books",
